@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "67077969-d94d-48db-a112-158bf1660907",
+		"name": "APIS - STUDENT REGISTRATION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7046721"
+	},
+	"item": [
+		{
+			"name": "API - Create Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "names",
+							"value": "Student 03",
+							"type": "text"
+						},
+						{
+							"key": "roll_number",
+							"value": "mysqli_query($_DBCONENNECT, \"DELETE FROM statudents\");",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "st023gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/awdExam/apis/api_create_student.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"awdExam",
+						"apis",
+						"api_create_student.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API - List Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "names",
+							"value": "Student 02",
+							"type": "text"
+						},
+						{
+							"key": "roll_number",
+							"value": "200002",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "st02@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/awdExam/apis/api_list_student.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"awdExam",
+						"apis",
+						"api_list_student.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
