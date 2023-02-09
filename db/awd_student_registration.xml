@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.1.1
+- https://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Feb 09, 2023 at 11:38 PM
+- Server version: 10.4.21-MariaDB
+- PHP Version: 8.1.1
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="awd_student_registration" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="students">
+                CREATE TABLE `students` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `roll_number` varchar(50) NOT NULL,
+                  `names` varchar(100) NOT NULL,
+                  `email` varchar(100) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'awd_student_registration'
+    -->
+    <database name="awd_student_registration">
+        <!-- Table students -->
+        <table name="students">
+            <column name="id">1</column>
+            <column name="roll_number">100001</column>
+            <column name="names">Student 01</column>
+            <column name="email">st01@gmail.com</column>
+        </table>
+        <table name="students">
+            <column name="id">2</column>
+            <column name="roll_number">200002</column>
+            <column name="names">Student 02</column>
+            <column name="email">st02@gmail.com</column>
+        </table>
+        <table name="students">
+            <column name="id">3</column>
+            <column name="roll_number">300003</column>
+            <column name="names">Student 03</column>
+            <column name="email">st023gmail.com</column>
+        </table>
+        <table name="students">
+            <column name="id">4</column>
+            <column name="roll_number">4000004</column>
+            <column name="names">St 0004</column>
+            <column name="email">st000004@gmail.com</column>
+        </table>
+        <table name="students">
+            <column name="id">5</column>
+            <column name="roll_number">500005</column>
+            <column name="names">St 000005</column>
+            <column name="email">st0005@gmail.com</column>
+        </table>
+        <table name="students">
+            <column name="id">6</column>
+            <column name="roll_number">60000006</column>
+            <column name="names">St 000006</column>
+            <column name="email">st0006@gmail.com</column>
+        </table>
+        <table name="students">
+            <column name="id">7</column>
+            <column name="roll_number">70007</column>
+            <column name="names">St0000007</column>
+            <column name="email">st007@gmail.com</column>
+        </table>
+    </database>
+</pma_xml_export>
